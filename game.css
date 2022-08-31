@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700;1,800&family=Stylish&display=swap');
+
 *{
 	padding:0;
 	margin:0;
 	overflow-x: hidden;
+	font-family: 'Stylish', sans-serif;
 }
 
 .bg{
@@ -41,16 +44,14 @@
 	100%{transform: translateX(-3217px)}
 	}
 
-@import url('http://fonts.cdnfonts.com/css/playsir');
 
 .AboutGame {
   color:#311FF9;
   font-size: 50px;
-  font-family: 'PLAYSIR', sans-serif;
   position: absolute; 
   top:50px; 
-  left:40%;
-  font-size: 3em;
+  left:36%;
+  font-size: 6em;
 }
 
 button:hover{
@@ -59,7 +60,6 @@ button:hover{
 
 .button1 {
     background-color : #34568B;
-	font-family: 'PLAYSIR', sans-serif;
 	border: ridge;
 	border-color: black;
 	color:black;
@@ -90,14 +90,14 @@ button:hover{
 
 #Playbutton{
 	position: absolute; 
-	top:400px; 
-	left:45%;
+	top:30%; 
+	left:46%;
 }
 
 #Replay{
    position: absolute; 
    top:450px; 
-   left:50%;
+   left:49%;
 }
 
 .Game_button{
@@ -120,25 +120,24 @@ button:hover{
 
 
 #Playbutton{
-	left:400;
+	left:40%;
 	top: 600;
 }
 
 .AboutGame {
 	top: 350;
-	left: 135;
-	font-size: 6em;
+	left: 170;
 }
 
 #Replay{
 	top: 750;
-	left: 480;
+	left: 46%;
 }
 
 .Game_button{
  position: absolute;
  top: 1100;
- width: 77%;
+ width: 80%;
  margin:0% 11%;
  display: flex;
  flex-direction: column;
@@ -153,7 +152,6 @@ button:hover{
  margin: 50 50px 50px;
  background-color: #4E7DE2;
   color: #fff;
- font-family: 'PLAYSIR', sans-serif;
  border-radius: 40px;
 }
 
