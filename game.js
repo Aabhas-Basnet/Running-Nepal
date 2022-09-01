@@ -27,6 +27,7 @@ Img.pig.src = "IMG/pig.png";
 
 Jump= new Audio("Audio/Jump.mp3");
 Run= new Audio("Audio/running.mp3");
+song= new Audio("Audio/song.mp3");
 No= new Audio("Audio/No.mp3");
 
 
@@ -37,6 +38,9 @@ function pause(){
 
 function play(){
 	surface.style.animationPlayState = "running";
+	song.play();
+	song.loop=true;
+	song.volume = 0.1;
 } 
 
 function PlayG(){
@@ -174,6 +178,17 @@ Movement= function(){
 	}
 }
 
+document.onkeydown = function(event){
+	
+   if (event.keyCode ===32){
+	if (enabled==true && screen.width > 1200){
+      click = 1;
+	  enabled = false;
+	  Jump.play();
+	}
+   }
+}
+
 document.onclick = function(mouse) {  
    
    if (enabled==true && screen.width > 1200){
@@ -201,14 +216,11 @@ update= function(){
 	    pause();
 		Display(player);
 	    return; 
-	 }else{
-	  Run.play();
 	 }
 	 
 	 if (GameOver == true){
 
 		pause();
-		Run.pause();
 		ReplayButton();
 		can.fillStyle = "red";
 		can.font = "100px 'Stylish', sans-serif";

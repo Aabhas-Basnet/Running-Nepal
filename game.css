@@ -45,6 +45,17 @@
 	}
 
 
+h1{
+	font-size: 3em;
+	bottom: 50px;
+	position: absolute;
+	left: 40%;
+}
+
+#M{
+	display: none;
+}
+
 .AboutGame {
   color:#311FF9;
   font-size: 50px;
@@ -159,6 +170,16 @@ button:hover{
   background-color: #FF0000;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+#C{
+	display: none;
+}
+
+#M{
+	display: block;
+	left: 25%;
+	top: 70%;
 }
 
 }
